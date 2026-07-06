@@ -1,0 +1,27 @@
+{
+  "name": "bentofolio",
+  "version": "0.1.0",
+  "description": "Scaffold a bento-grid portfolio from a GitHub profile",
+  "type": "module",
+  "bin": {
+    "bentofolio": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5",
+    "commander": "^13",
+    "fs-extra": "^11"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11",
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}

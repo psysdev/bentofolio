@@ -1,0 +1,9 @@
+{
+  "name": "bentofolio-monorepo",
+  "private": true,
+  "workspaces": ["cli"],
+  "scripts": {
+    "build": "npm run build --workspace=cli",
+    "publish": "npm publish --workspace=cli"
+  }
+}
